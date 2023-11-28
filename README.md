@@ -1,31 +1,30 @@
-Використовуй цей
-[шаблон React-проекту](https://github.com/goitacademy/react-homework-template#readme)
-як стартову точку своєї програми.
+Use this
+[react project template](https://github.com/goitacademy/react-homework-template#readme)
+as a starting point for your program.
 
-# Критерії приймання
+# Acceptance criteria
 
-- Створений репозиторій `goit-react-hw-07-phonebook`
-- Використана бібліотека `Redux Toolkit`
+- Created repository `goit-react-hw-07-phonebook`
+- Used library `Redux Toolkit`
 
-## Телефонна книга
+## Phonebook
 
-Виконай рефакторинг коду застосунку «Телефонна книга». Видали код, який
-відповідає за зберігання та читання контактів з локального сховища, та додай
-роботу з бекендом для зберігання контактів.
+Refactor the code of the Phone Book application. Issued a code which is
+responsible for storing and reading contacts from local storage, and add working
+with the backend for storing contacts.
 
-Створи бекенд для розробки за допомогою UI-сервісу
-[mockapi.io](https://mockapi.io). Зареєструйся, використовуючи свій обліковий
-запис GitHub.
+Create a backend for development using a UI service
+[mockapi.io](https://mockapi.io). Register using your account GitHub entry.
 
-Створи ресурс `contacts`, щоб отримати ендпоінт `/contacts`. Використовуй
-конструктор ресурсу та опиши об'єкт контакту як на ілюстрації.
+Create a `contacts` resource to get the `/contacts` endpoint. Use it resource
+constructor and describe the contact object as in the illustration.
 
 <img src="./resource.png" alt="Contact schema" with="400" />
 
-Використовуй функцію
-[createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) або
-[RTK Query](https://redux-toolkit.js.org/rtk-query/overview) для взаємодії з
-бекендом та асинхронними запитами.
+Use the function
+[createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) or
+[RTK Query](https://redux-toolkit.js.org/rtk-query/overview) to interact with
+backend and asynchronous requests.
 
 ---
 

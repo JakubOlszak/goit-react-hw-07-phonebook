@@ -15,7 +15,7 @@ const ContactList = () => {
         <Item key={contact.id}>
           {contact.name + ' : ' + contact.number}
           {
-            // Кнопка видалення контакту
+            
             <Button
               type="button"
               name="delete"

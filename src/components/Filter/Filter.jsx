@@ -3,12 +3,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectFilter } from 'redux/selectors';
 import { changeFilter } from 'redux/filterSlice';
 
-// Компонент фільтрації контактів
+
 const Filter = () => {
   const value = useSelector(selectFilter);
   const dispatch = useDispatch();
 
-  // Обробник зміни значення фільтра
+ 
   const onChange = event => {
     const normalizedValue = event.target.value.toLowerCase();
 

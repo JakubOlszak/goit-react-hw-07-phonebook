@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectContacts } from 'redux/selectors';
 import { addContacts } from '../../redux/operations';
 
-//Генерація унікальних ідентифікаторів для полів форми.
+ 
 const nameInputId = nanoid();
 const numberInputId = nanoid();
 
@@ -17,7 +17,7 @@ const ContactForm = () => {
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
 
-  // Обробка відправлення форми.
+ 
   const handleSubmit = event => {
     event.preventDefault();
 
@@ -25,19 +25,19 @@ const ContactForm = () => {
       contact => contact.name.toLowerCase().trim() === name.toLowerCase().trim()
     );
 
-    // Перевіряє, чи існує контакт із таким самим ім'ям у списку контактів. Якщо контакт вже існує, виводиться попередження.
+    
     if (isInContacts) {
       alert(`${name} is already in contacts`);
       return;
     }
 
-    // Виклик функції onSubmit із батьківського компонента з передачею об'єкта контакту.
+    
     dispatch(addContacts({ name, number }));
     setName('');
     setNumber('');
   };
 
-  // Обробка зміни значень полів форми.
+ 
   const handleChange = event => {
     const { name, value } = event.target;
 
