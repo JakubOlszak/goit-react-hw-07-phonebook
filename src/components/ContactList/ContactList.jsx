@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectVisibleContacts } from 'redux/selectors';
 import { deleteContacts } from '../../redux/operations';
 
-// Компонент списку контактів
+ 
 const ContactList = () => {
   const contacts = useSelector(selectVisibleContacts);
   const dispatch = useDispatch();
